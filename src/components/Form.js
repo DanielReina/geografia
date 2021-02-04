@@ -23,17 +23,20 @@ const RandomCountry = () => {
     let ctries = [...allCountries];
     let randomC = ctries[Math.floor(Math.random() * ctries.length)];
     setRamdonC(randomC);
-     setVerify(false);
+    setVerify(false);
+     console.log(randomC.capitalEsp);
   };
   const confirm = (e) => {
     e.preventDefault();
-    if (capital) {
+    if (capital && randomC.capitalEsp) {
       if (capital.toLowerCase() === randomC.capitalEsp[0].toLowerCase()) {
         setVerify(true);
-      } else { setVerify(false); }
+      } else {
+        setVerify(false);
+      }
     }
     setSubmit(true);
-    console.log(countries[9].capitalEsp);
+   
   };
 
   return (
