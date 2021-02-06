@@ -3,22 +3,21 @@ import allCountries from "../countries.json";
 import styled from "@emotion/styled";
 
 const Container = styled.div`
-  padding: 10% 0;
+  padding: 5% 0;
   display:flex;
   justify-content: center;
   align-items:center;
   flex-direction: column;
 `
-// const Button1 = styled.input`
-//   border: solid 1px white;
-//   background-color: black;
-//   padding: 10px 20px;
-//   color: white;
-//   font-size:20px;
-//   text-align: center;   
-//   text-transform:uppercase;
-// `;
+const Correct = styled.p`
+  background-color: rgba(0, 255, 0, 0.3);
+  padding: 2%;
+`;
 
+const Incorrect = styled.p`
+  background-color: rgba(244, 127, 127, 0.3);
+  padding: 2%;
+`;
 const Button1 = styled.input`
   background-color: white;
   font-size: 16px;
@@ -53,7 +52,7 @@ const Input = styled.input`
   -webkit-appearance: none;
 `;
 const Button2 = styled.input`
-  width: 110px;
+  width: 130px;
   padding: 1em;
   transition: background-color 0.4s ease;
   border: 1px solid #e1e1e1;
@@ -67,7 +66,7 @@ const Button2 = styled.input`
 const Button3 = styled.input`
   width: 200px;
   padding: 1em;
-  margin-top: 5em;
+  margin-top: 2em;
   transition: background-color 0.4s ease;
   border: 1px solid #e1e1e1;
   &:hover {
@@ -142,11 +141,11 @@ const RandomCountry = () => {
               {submit && (
                 <>
                   {verify ? (
-                    <p>Respuesta correcta, ¡Qué sabia eres Goyi!</p>
+                    <Correct>Respuesta correcta, ¡Qué sabia eres Goyi!</Correct>
                   ) : (
-                    <p>
-                      Incorrecto, prueba de nuevo abuela ¡Venga que tu puedes!
-                    </p>
+                    <Incorrect>
+                      Incorrecto, prueba de nuevo abuela<br/>¡Venga que tu puedes!
+                    </Incorrect>
                   )}
                 </>
               )}

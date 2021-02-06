@@ -18,12 +18,22 @@ const Start = styled.h2`
   border: solid 1px;
   background-color: black;
   padding: 10px 20px;
+  font-size: 20px;
+  margin-top:2%;
   color: white;
   text-align: center;
+  transition: background-color 0.4s ease;
   display: inline-block;
+   &:hover {
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+  }
 `;
+
 const H1 = styled.h1`
 margin: 0 10%auto;
+font-size:25px;
 `
 
 const Cover = () => {
@@ -39,7 +49,7 @@ const Cover = () => {
       </DivFather>
       <Link to="/capitales" style={{ textDecoration: "none" }}>
         <Center>
-          <Start>Paises y capitales</Start>
+          <Start>Paises y Capitales</Start>
         </Center>
       </Link>
       <Link to="/banderas" style={{ textDecoration: "none" }}>
