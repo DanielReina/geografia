@@ -1,22 +1,9 @@
-.padre {
-   padding: 5% 0;
-}
-.hijo {
-   padding: 10% 0;
-   text-align: center;
-}
 h1{
-  font-family: 'Caveat', cursive;
+  font-family: Arial;
+  text-align: center;
+  font-weight: 200;
+  font-size: 30px;
+  word-spacing: 4px;
+  line-height: 70px;
 }
-.centrar{
-  display: flex;
-  justify-content: center;
-}
-.empezar{
-border: solid 1px;
-background-color: black;
-padding: 10px 20px;
-color:white;
-text-align: center;
-display: inline-block;
-}
+
