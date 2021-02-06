@@ -37,9 +37,14 @@ const Cover = () => {
           </H1>
         </DivSon>
       </DivFather>
-      <Link to="/aplicacion" style={{ textDecoration: "none" }}>
+      <Link to="/capitales" style={{ textDecoration: "none" }}>
         <Center>
-          <Start>EMPEZAR</Start>
+          <Start>Paises y capitales</Start>
+        </Center>
+      </Link>
+      <Link to="/banderas" style={{ textDecoration: "none" }}>
+        <Center>
+          <Start>Banderas y sus Paises</Start>
         </Center>
       </Link>
     </>
